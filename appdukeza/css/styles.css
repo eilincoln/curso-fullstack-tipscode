@@ -10,6 +10,15 @@ h1 {
     font-weight: 900;
 }
 
+h3 {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-weight: bold;
+}
+
+p {
+    color: #8f8f8f;
+}
+
 .header-title {
     background-color: #051d35;
     color: #FFFFFF;
@@ -58,8 +67,20 @@ h1 {
 
 /* ================================== itens  ================================== */
 
-.features-item {
-    padding: 95px;
-    text-align: center;
+.features {
+    padding: 7% 15%;
 }
 
+.features-item {
+    text-align: center;
+    padding: 5%;
+}
+
+.icon {
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.icon:hover {
+    color: #ff4c68;
+}
