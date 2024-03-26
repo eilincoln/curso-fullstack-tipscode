@@ -59,10 +59,13 @@ p {
 
 /* ================================== title image ================================== */
 
+
 .title-image {
-    width: 60%;
+    width: 50%;
     transform: rotate(25deg);
-    margin-left: 76px;
+    margin-left: 80px;
+    z-index: 1;
+    position: absolute;
 }
 
 /* ================================== buttons ================================== */
@@ -73,8 +76,11 @@ p {
 
 /* ================================== itens  ================================== */
 
-.features {
-    padding: 7% 15%;
+#features {
+    background-color: #FFFFFF;
+    padding: 1% 8%;
+    z-index: 2;
+    position: relative;
 }
 
 .features-item {
