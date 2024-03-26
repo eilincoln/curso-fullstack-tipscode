@@ -157,6 +157,17 @@ p {
     text-align: center;
 }
 
+/* ============================footer============================= */
+
+#footer {
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.footer-icon {
+    padding: 3% 2%;
+} 
+
 
 /* =============================== reponsivo ==================== */
 
