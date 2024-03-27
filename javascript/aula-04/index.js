@@ -23,6 +23,7 @@ let primeiraLetra = nomeDoUsuario.slice(0,1);
 let primeiraLetraCaixaAlta = primeiraLetra.toUpperCase();
 
 let restoNome = nomeDoUsuario.slice(1, nomeDoUsuario.length);
+restoNome = restoNome.toLowerCase();
 
 let resultado = primeiraLetraCaixaAlta + restoNome;
 
