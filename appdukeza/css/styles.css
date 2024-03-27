@@ -1,51 +1,59 @@
-/* ================================== tags ================================== */
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
+    text-align: center;
 }
 
-h1 {
-    font-family: "Montserrat-black", sans-serif;
-    font-size: 3.5rem;
-    line-height: 1.5;
-    font-weight: 900;
-}
-
-h2 {
-    font-family: "Montserrat-black", sans-serif;
-    font-size: 2.5rem;
-    line-height: 1.5;
-}
-
-h3 {
-    font-family: "Montserrat-Bold", sans-serif;
-    font-weight: bold;
+h1, h2, h3, h4, h5, h6 {  
+    font-family: "Montserrat-Bold";
 }
 
 p {
     color: #8f8f8f;
 }
 
-.header-title {
-    background-color: #051d35;
-    color: #FFFFFF;
+/* Heading*/
+
+.big-heading {
+    font-family: 'Montserrat-Black, sans-serif';  
+    font-size: 3.5rem;  
+    line-height: 1.5;  
+    font-weight: 900;
 }
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* Conteiner Section */
 
 .container-fluid {
-    padding: 1% 8%;
+    padding: 7% 15%;
 }
 
-/* ================================== navbar ================================== */
-.navbar{
-    padding-bottom: 4.5rem;
-    padding-left: 0px;
-    padding-right: 0px;
+/* Section */
+
+.colored-section {
+    background-color: #ff4c68;
+    color: #fff;
 }
 
-.navbar-brand {
-    color: #FFFFFF;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 2.5rem;
-    font-weight: bold;
+.white-section {
+    background-color: #fff;
+}
+
+/*  Title Section */
+
+#title .container-fluid {
+    background-color: #051d35;
+    padding: 3% 15% 7%;
+    text-align: left;
+}
+
+
+/* Navigation bar */
+.navbar {
+    padding: 0 0 4.5rem;
 }
 
 .nav-item {
@@ -54,89 +62,105 @@ p {
 
 .nav-link {
     font-size: 1.2rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
 }
 
-/* ================================== title image ================================== */
-.row-direita {
-    margin-bottom: 37px;
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
 }
+/* title-image */
 
 .title-image {
-    width: 50%;
+    width: 60%;
     transform: rotate(25deg);
-    margin-left: 80px;
-    z-index: 1;
     position: absolute;
-    left: 18%;
+    right: 21%;
 }
 
-/* ================================== buttons ================================== */
+/* Buttons */
 
-.button-apple {
-    margin-right: 10%;
-}
+.download-button {
+    margin: 5% 3% 5% 0;
+  }
 
-/* ================================== itens  ================================== */
+/* Features Section*/
 
 #features {
-    background-color: #FFFFFF;
-    padding: 1% 8%;
-    z-index: 2;
+    z-index: 1;
     position: relative;
 }
 
-.features-item {
-    text-align: center;
+.feature-box {
     padding: 5%;
 }
 
-.icon {
+.features-title {
+    font-size: 1.5rem;
+}
+
+.icon  {
     color: #ef8172;
     margin-bottom: 1rem;
 }
 
-.icon:hover {
+.icon:hover{
     color: #ff4c68;
 }
 
-/* ==================================== testimonials =========================== */
+/* Testimonials Section*/
 
-#testimonials {
-    padding: 7% 15%;
-    text-align: center;
-    background-color: #ef8172;
-    color: #FFFFFF;
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
-
-.testimonials-image {
-    width: 15%;
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
     margin: 20px;
-    border-radius: 50%;
 }
 
 #press {
-    background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
 }
 
-.press-logo {
+.press-logo{
     width: 15%;
     margin: 20px 20px 50px;
 }
 
-.carousel-item {
-    padding: 7% 15%;
-}
-
-/* ====================== pricing =========================== */
+/* pricing section*/
 
 #pricing {
     padding: 100px;
-    text-align: center;
+  
+}
+
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .pricing-column {
     padding: 3% 2%;
+}
+
+/* Footer Section */
+
+.social-icon {
+    margin: 20px 10px;
+}
+/* site responsivo*/
+
+@media (max-width: 1028px){
+
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
 }
