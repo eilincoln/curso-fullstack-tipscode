@@ -1,20 +1,20 @@
-// let numeros = Math.random();
+const nomes = ["Alice", "Bob", "Lincoln", "Daniela", "Eduardo", "Fernanda", "Gabriel", "Helena", "Igor", "Julia", "Klaus", "Larissa", "Marcelo", "Natalia", "Otavio", "Paula", "Quiteria", "Rafael", "Sabrina", "Thiago", "Ursula", "Valdir", "Wanessa", "Xavier", "Yasmin", "Zeca"];
 
-// numeros = numeros * 6;
+// Lembrar que o array sempre começa com 0
+// let meuNome = nomes[2];
 
-// numeros = Math.floor(numeros + 1);
+// console.log(meuNome);
+// console.log(nomes.length);
+// console.log(nomes)
 
-// console.log(numeros);
-
-/*
-    Criar um número aleatório entre 1 a 100 e mostrar no alert
-*/
-let score = Math.floor((Math.random() * 100)) + 1;
-
-if(score > 70) {
-    alert("Parabés!!!! Nível bom de compatibilidade! A porcentagem entre vocês é de: " + score + "%");
-} else if (score > 30 && score <= 70){
-    alert("A porcentagem entre vocês é BEM MÉDIA! de: " + score + "%");
-} else {
-    alert("A porcentagem entre vocês é RUIM! de: " + score + "%");
+function entrada(temNome) {
+    if(nomes.includes(temNome)) {
+        alert('Você pode entrar!');
+    } else {
+        alert('Você NÃO pode entrar!');
+    }
 }
+let nomeUsuario = prompt('digite seu nome: ');
+
+entrada(nomeUsuario);
+console.log(typeof(nomes.includes('Lincoln')));
